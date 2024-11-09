@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to JavaScript file -->
+</head>
+
+<body id="dashboard-page">
+<div class="container">
+    <section class="input-section">
+        <div class="input-group">
+
+            <form action="template.php" method="POST">
+                <div class="contact-group">
+                    <h3>Contact</h3>
+                    <input type="text" id="fullname" name="fullname" placeholder="Full name">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                    <input type="email" id="email" name="email" placeholder="Email address">
+                </div>
+
+                <div class="summary-group">
+                    <h3>Summary</h3>
+                    <textarea name="Summary" placeholder="Brief introduction of yourself"></textarea>
+                </div>
+
+                <div class="education-group">
+                    <h3>Education</h3>
+                    <div id="schools-container">
+                        <input type="text" name="school[]" placeholder="Educational institution">
+                    </div>
+                    <button type="button" id="add-school-btn">Add</button>
+                </div>
+
+                <div class="expertise-group">
+                    <h3>Expertise</h3>
+                    <div id="skills-container">
+                        <input type="text" name="skill[]" placeholder="Skill">
+                    </div>
+                    <button type="button" id="add-skill-btn">Add</button>
+                </div>
+
+                <div class="language-group">
+                    <h3>Languages</h3>
+                    <div id="language-container">
+                        <input type="text" name="language[]" placeholder="Language">
+                    </div>
+                    <button type="button" id="add-language-btn">Add</button>
+                </div>
+
+                <div class="hobby-group">
+                    <h3>Hobbies</h3>
+                    <div id="hobby-container">
+                        <input type="text" name="hobby[]" placeholder="Hobby">
+                    </div>
+                    <button type="button" id="add-hobby-btn">Add</button>
+                </div>
+
+                <div class="award-group">
+                    <h3>Awards</h3>
+                    <div id="award-container">
+                        <input type="text" name="award[]" placeholder="Award">
+                    </div>
+                    <button type="button" id="add-award-btn">Add</button>
+                </div>
+
+                <div class="project-group">
+                    <h3>Projects</h3>
+                    <textarea name="projects" placeholder="Description of your projects"></textarea>
+                </div>
+
+                <div class="experience-group">
+                    <h3>Experience</h3>
+                    <textarea name="experience" placeholder="Description of your overall experience"></textarea>
+                </div>
+
+
+
+                <button type="submit">Generate template</button>
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+</html>
+
+
