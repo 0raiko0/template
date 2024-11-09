@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/test.jpg");
+    background-image: url("test.jpg");
     background-size: cover; /* Makes the background image cover the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Ensures the image doesn't repeat */
